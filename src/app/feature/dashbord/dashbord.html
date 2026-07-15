@@ -1,5 +1,5 @@
-<main class="bg-white">
-    <header class=" flex justify-between items-center bg-white p-6 rounded-4xl shadow-lg">
+<main class="bg-white z-30 shadow-md rounded-2xl p-6 mt-2 ml-2 h-[calc(100vh-5rem)] overflow-y-auto">
+    <header class=" flex justify-between items-center bg-white  ">
         <div class="flex items-center gap-3 ">
             <h2 class="text-xl">web Analytics</h2>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -24,12 +24,12 @@
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
 
         <!-- Left Side -->
-        <div class="lg:col-span-3 bg-white border border-gray-100 shadow-sm rounded-2xl overflow-hidden mb-20">
+        <div class="lg:col-span-3 bg-white border border-gray-100 shadow-md rounded-2xl overflow-hidden">
             <div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
 
                 <!-- Card 1 -->
-                <div class="p-6 hover:bg-gray-50/50 transition-colors duration-200">
-                    <div class="flex justify-between items-center mb-15">
+                <div class="p-6 hover:bg-gray-50/50 transition-colors duration-200 h-full flex flex-col">
+                    <div class="flex justify-between items-center mb-4">
                         <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">
                             Page Load Time
                         </h3>
@@ -46,7 +46,7 @@
                         384ms
                     </h2>
 
-                    <div class="flex items-center mt-20">
+                    <div class="flex items-center mt-auto pt-4">
                         <div
                             class="flex items-center gap-1 bg-green-50 text-green-700 px-2 py-1 rounded-md text-xs font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -62,7 +62,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="p-6 hover:bg-gray-50/50 transition-colors duration-200">
+                <div class="p-6 hover:bg-gray-50/50 transition-colors duration-200 h-full flex flex-col">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">
                             Visits
@@ -80,7 +80,7 @@
                         24
                     </h2>
 
-                    <div class="flex items-center mt-4">
+                    <div class="flex items-center mt-auto pt-4">
                         <div
                             class="flex items-center gap-1 bg-red-50 text-red-700 px-2 py-1 rounded-md text-xs font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -96,7 +96,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="p-6 hover:bg-gray-50/50 transition-colors duration-200">
+                <div class="p-6 hover:bg-gray-50/50 transition-colors duration-200 h-full flex flex-col">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">
                             Page Views
@@ -114,7 +114,7 @@
                         26
                     </h2>
 
-                    <div class="flex items-center mt-4">
+                    <div class="flex items-center mt-auto pt-4">
                         <div
                             class="flex items-center gap-1 bg-green-50 text-green-700 px-2 py-1 rounded-md text-xs font-semibold">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
@@ -133,14 +133,14 @@
         </div>
 
         <!-- Right Side -->
-        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col ">
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-md p-6 flex flex-col h-full">
 
             <div class="flex justify-between items-center mb-4">
                 <div class="flex items-center gap-2">
                     <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">
                         Core Web Vitals
                     </h3>
-                    <button class="text-gray-400 hover:text-gray-600 transition-colors" title="More Information">
+                    <button class="text-gray-400 hover:text-gray-600 transition-colors " title="More Information">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" class="w-4 h-4">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -163,7 +163,7 @@
                     92.7
                 </h2>
 
-                <div class="flex items-center mt-3">
+                <div class="flex items-center mt-4">
                     <div
                         class="flex items-center gap-1 bg-red-50 text-red-700 px-2 py-1 rounded-md text-xs font-semibold">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-3 h-3">
@@ -177,9 +177,9 @@
                 </div>
             </div>
 
-            <div class="mt-auto pt-8 flex justify-between items-end">
+            <div class="mt-auto pt-6 flex justify-between items-end">
                 <!-- Legend -->
-                <div class="space-y-3 text-xs font-medium text-gray-500 mb-10">
+                <div class="space-y-3 text-xs font-medium text-gray-500">
                     <div class="flex items-center gap-2">
                         <div class="w-2.5 h-2.5 rounded bg-blue-500"></div>
                         <span>LCP <span class="text-gray-900 font-bold ml-1">30%</span></span>
@@ -195,7 +195,7 @@
                 </div>
 
                 <!-- Graph Blocks -->
-                <div class="flex gap-2.5 mb-10">
+                <div class="flex gap-2.5">
                     <div class="flex flex-col gap-2 justify-end">
                         <div class="h-6 w-6 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
                         </div>
@@ -230,4 +230,12 @@
         </div>
 
     </div>
+    <section>
+
+    <div class="grid lg:grid-cols-3 gap-6">
+
+
+    </div>
+
+</section>
 </main>
