@@ -21,7 +21,7 @@
             <span class="text-3xl cursor-pointer mb-5">...</span>
         </div>
     </header>
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6 items-start">
 
         <!-- Left Side -->
         <div class="lg:col-span-3 bg-white border border-gray-100 shadow-md rounded-2xl overflow-hidden">
@@ -133,10 +133,10 @@
         </div>
 
         <!-- Right Side -->
-        <div class="bg-white rounded-2xl border border-gray-100 shadow-md p-6 flex flex-col h-full">
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-md p-6 grid gap-6 min-w-0 lg:self-start">
 
-            <div class="flex justify-between items-center mb-4">
-                <div class="flex items-center gap-2">
+            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
+                <div class="flex items-center gap-2 min-w-0">
                     <h3 class="text-gray-500 text-xs font-bold uppercase tracking-wider">
                         Core Web Vitals
                     </h3>
@@ -177,7 +177,7 @@
                 </div>
             </div>
 
-            <div class="mt-auto pt-6 flex justify-between items-end">
+            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-end gap-4 pt-2">
                 <!-- Legend -->
                 <div class="space-y-3 text-xs font-medium text-gray-500">
                     <div class="flex items-center gap-2">
@@ -195,8 +195,8 @@
                 </div>
 
                 <!-- Graph Blocks -->
-                <div class="flex gap-2.5">
-                    <div class="flex flex-col gap-2 justify-end">
+                <div class="grid grid-cols-3 items-end gap-2.5">
+                    <div class="grid content-end gap-2">
                         <div class="h-6 w-6 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
                         </div>
                         <div class="h-6 w-6 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
@@ -206,7 +206,7 @@
                         <div class="h-6 w-6 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 justify-end">
+                    <div class="grid content-end gap-2">
                         <div class="h-10 w-6 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
                         </div>
                         <div class="h-6 w-6 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
@@ -216,7 +216,7 @@
                         <div class="h-6 w-6 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 justify-end">
+                    <div class="grid content-end gap-2">
                         <div class="h-4 w-6 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
                         </div>
                         <div class="h-6 w-6 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
