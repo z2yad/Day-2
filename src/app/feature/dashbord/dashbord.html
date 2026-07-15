@@ -22,16 +22,29 @@
         </div>
     </header>
 <!--statics cards-->
-<div class="grid grid-cols-5">
-    <div class="flex flex-col">
-        <div class="flex justify-between items-center ">
-            <h3>page views</h3>
-            <span class="flex text-3xl">...</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-6 gap-6">
+    <!-- Stat Card -->
+    <div class="flex flex-col bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Page Views</h3>
+            <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+            </button>
         </div>
-        <h2> 26</h2>
+        
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">26</h2>
 
-   <div class="flex gap-1.5">
-     </div>
+        <div class="flex items-center mt-auto">
+            <div class="flex items-center gap-1 bg-green-50 text-green-600 px-2.5 py-1 rounded-md text-sm font-semibold">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                <span>4%</span>
+            </div>
+            <span class="text-sm text-gray-500 font-medium ml-3">since last month</span>
+        </div>
     </div>
 </div>
 </main>
