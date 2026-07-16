@@ -1,4 +1,4 @@
-<main class="bg-white z-30 shadow-md rounded-2xl p-6 mt-2 ml-2 h-[calc(100vh-5rem)] overflow-y-auto">
+<main class="bg-white shadow-md rounded-2xl p-6 mt-2 ml-2 h-[calc(100vh-5rem)] overflow-y-auto">
     <header class=" flex justify-between items-center bg-white  ">
         <div class="flex items-center gap-3 ">
             <h2 class="text-xl">web Analytics</h2>
@@ -21,226 +21,246 @@
             <span class="text-3xl cursor-pointer mb-5">...</span>
         </div>
     </header>
-    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.75fr)_minmax(300px,1fr)] gap-3 mt-6 items-start">
+    <div class="grid grid-cols-5  gap-3 mt-6 items-start">
+        <div class="col-span-3 ">
+            <div class="bg-white dashboard-card-dots border border-gray-100 shadow-sm rounded-xl sm:h-[8.5rem]">
+                <div class="grid h-full grid-cols-1 sm:grid-cols-3 divide-x-2 divide-gray-100">
+                    <!-- Card 1 -->
+                    <div class=" px-4 py-3 hover:bg-gray-50/50 transition-colors duration-200">
+                        <div class="flex flex-col justify-between h-full ">
+                            <div class="flex justify-between items-start gap-3">
+                                <h3 class="text-gray-500 text-xs font-semibold">
+                                    Page Load Time
+                                </h3>
+                                <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <h2 class=" text-2xl font-semibold text-gray-900">
+                                384ms
+                            </h2>
+
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="flex items-center gap-1 bg-green-50 text-green-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="w-3 h-3">
+                                        <path fill-rule="evenodd"
+                                            d="M10 17a.75.75 0 0 1-.75-.75V5.612L5.29 9.77a.75.75 0 0 1-1.08-1.04l5.25-5.5a.75.75 0 0 1 1.08 0l5.25-5.5a.75.75 0 1 1-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0 1 10 17Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>3ms</span>
+                                </div>
+                                <span class="text-[10px] text-gray-500 font-medium">from last month</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="flex flex-col h-full justify-between px-4 py-3 hover:bg-gray-50/50 transition-colors duration-200">
+                        <div class="flex justify-between items-start gap-3">
+                            <h3 class="text-gray-500 text-xs font-semibold">
+                                Visits
+                            </h3>
+                            <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <h2 class="text-2xl font-semibold text-gray-900">
+                            24
+                        </h2>
+
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="flex items-center gap-1 bg-red-50 text-red-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-3 h-3">
+                                    <path fill-rule="evenodd"
+                                        d="M10 3a.75.75 0 0 1 .75.75v10.638l3.96-4.158a.75.75 0 1 1 1.08 1.04l-5.25 5.5a.75.75 0 0 1-1.08 0l-5.25-5.5a.75.75 0 1 1 1.08-1.04l3.96 4.158V3.75A.75.75 0 0 1 10 3Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>1</span>
+                            </div>
+                            <span class="text-[10px] text-gray-500 font-medium">from last month</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class=" h-full flex flex-col justify-between px-4 py-3 hover:bg-gray-50/50 transition-colors duration-200">
+                        <div class="flex justify-between items-start gap-3">
+                            <h3 class="text-gray-500 text-xs font-semibold">
+                                Page Views
+                            </h3>
+                            <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <h2 class="text-2xl font-semibold text-gray-900">
+                            26
+                        </h2>
+
+                        <div class="flex items-center gap-2">
+                            <div
+                                class="flex items-center gap-1 bg-green-50 text-green-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-3 h-3">
+                                    <path fill-rule="evenodd"
+                                        d="M10 17a.75.75 0 0 1-.75-.75V5.612L5.29 9.77a.75.75 0 0 1-1.08-1.04l5.25-5.5a.75.75 0 0 1 1.08 0l5.25-5.5a.75.75 0 1 1-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0 1 10 17Z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                                <span>3</span>
+                            </div>
+                            <span class="text-[10px] text-gray-500 font-medium">from last month</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!--left side-->
+        <div class="col-span-2 ">
+            <div
+                class="flex dashboard-card-dots flex-col h-full  justify-between gap-3 bg-white shadow-md p-2 rounded-2xl ml-10">
+                <div>
+                    <div class="flex h-full  justify-between items-center gap-3">
+                        <div class="flex items-center gap-2 ">
+                            <h3 class="text-gray-500 text-xs font-semibold">
+                                Core Web Vitals
+                            </h3>
+                            <button class="text-gray-400 hover:text-gray-600 transition-colors "
+                                title="More Information">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="currentColor" class="w-4 h-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <button class="text-gray-400 hover:text-gray-600 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-row justify-between items-end gap-5 mt-2 w-full">
+                        <div class="flex flex-col gap-1 w-1/2">
+                            <h2 class="text-2xl font-semibold text-gray-900">
+                                92.7
+                            </h2>
+
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="flex items-center gap-1 bg-red-50 text-red-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        class="w-3 h-3">
+                                        <path fill-rule="evenodd"
+                                            d="M10 3a.75.75 0 0 1 .75.75v10.638l3.96-4.158a.75.75 0 1 1 1.08 1.04l-5.25 5.5a.75.75 0 0 1-1.08 0l-5.25-5.5a.75.75 0 1 1 1.08-1.04l3.96 4.158V3.75A.75.75 0 0 1 10 3Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>1.2</span>
+                                </div>
+                                <span class="text-[10px] text-gray-500 font-medium">from last month</span>
+                            </div>
+
+                            <!-- Legend -->
+                            <div class="flex flex-col gap-3 text-[10px] font-medium text-gray-500">
+                                <div class="flex gap-3">
+                                    <div class="flex items-center gap-1.5">
+                                        <div class="w-2 h-2 rounded-sm bg-blue-500"></div>
+                                        <span>LCP <span class="text-gray-900 font-semibold">30%</span></span>
+                                    </div>
+                                    <div class="flex items-center gap-1.5">
+                                        <div class="w-2 h-2 rounded-sm bg-violet-500"></div>
+                                        <span>INP <span class="text-gray-900 font-semibold">46%</span></span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <div class="w-2 h-2 rounded-sm bg-cyan-400"></div>
+                                    <span>CLS <span class="text-gray-900 font-semibold">24%</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex h-full items-end justify-end gap-1.5 w-1/2">
+                            <div class="flex flex-col justify-end gap-1">
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-8 w-8 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-end gap-1">
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-end gap-1">
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                                <div
+                                    class="h-3.5 w-7 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
         <!-- Left Side -->
-        <div
-            class="dashboard-card-dots bg-white border border-gray-100 shadow-sm rounded-xl overflow-hidden sm:h-[8.5rem]">
-            <div class="grid h-full grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-100">
-
-                <!-- Card 1 -->
-                <div
-                    class="grid h-full grid-rows-[auto_1fr_auto] px-4 py-3 hover:bg-gray-50/50 transition-colors duration-200">
-                    <div class="flex justify-between items-start gap-3">
-                        <h3 class="text-gray-500 text-xs font-semibold">
-                            Page Load Time
-                        </h3>
-                        <button class="text-gray-400 hover:text-gray-600 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <h2 class="self-center text-2xl font-semibold text-gray-900">
-                        384ms
-                    </h2>
-
-                    <div class="flex items-center gap-2">
-                        <div
-                            class="flex items-center gap-1 bg-green-50 text-green-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-3 h-3">
-                                <path fill-rule="evenodd"
-                                    d="M10 17a.75.75 0 0 1-.75-.75V5.612L5.29 9.77a.75.75 0 0 1-1.08-1.04l5.25-5.5a.75.75 0 0 1 1.08 0l5.25-5.5a.75.75 0 1 1-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0 1 10 17Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>3ms</span>
-                        </div>
-                        <span class="text-[10px] text-gray-500 font-medium">from last month</span>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div
-                    class="grid h-full grid-rows-[auto_1fr_auto] px-4 py-3 hover:bg-gray-50/50 transition-colors duration-200">
-                    <div class="flex justify-between items-start gap-3">
-                        <h3 class="text-gray-500 text-xs font-semibold">
-                            Visits
-                        </h3>
-                        <button class="text-gray-400 hover:text-gray-600 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <h2 class="self-center text-2xl font-semibold text-gray-900">
-                        24
-                    </h2>
-
-                    <div class="flex items-center gap-2">
-                        <div
-                            class="flex items-center gap-1 bg-red-50 text-red-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-3 h-3">
-                                <path fill-rule="evenodd"
-                                    d="M10 3a.75.75 0 0 1 .75.75v10.638l3.96-4.158a.75.75 0 1 1 1.08 1.04l-5.25 5.5a.75.75 0 0 1-1.08 0l-5.25-5.5a.75.75 0 1 1 1.08-1.04l3.96 4.158V3.75A.75.75 0 0 1 10 3Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>1</span>
-                        </div>
-                        <span class="text-[10px] text-gray-500 font-medium">from last month</span>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    class="grid h-full grid-rows-[auto_1fr_auto] px-4 py-3 hover:bg-gray-50/50 transition-colors duration-200">
-                    <div class="flex justify-between items-start gap-3">
-                        <h3 class="text-gray-500 text-xs font-semibold">
-                            Page Views
-                        </h3>
-                        <button class="text-gray-400 hover:text-gray-600 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <h2 class="self-center text-2xl font-semibold text-gray-900">
-                        26
-                    </h2>
-
-                    <div class="flex items-center gap-2">
-                        <div
-                            class="flex items-center gap-1 bg-green-50 text-green-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-3 h-3">
-                                <path fill-rule="evenodd"
-                                    d="M10 17a.75.75 0 0 1-.75-.75V5.612L5.29 9.77a.75.75 0 0 1-1.08-1.04l5.25-5.5a.75.75 0 0 1 1.08 0l5.25-5.5a.75.75 0 1 1-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0 1 10 17Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>3</span>
-                        </div>
-                        <span class="text-[10px] text-gray-500 font-medium">from last month</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
 
         <!-- Right Side -->
-        <div
-            class="dashboard-card-dots bg-white rounded-xl border border-gray-100 shadow-sm p-3 grid gap-1 min-w-0 sm:h-[8.5rem] lg:self-start">
 
-            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3">
-                <div class="flex items-center gap-2 min-w-0">
-                    <h3 class="text-gray-500 text-xs font-semibold">
-                        Core Web Vitals
-                    </h3>
-                    <button class="text-gray-400 hover:text-gray-600 transition-colors " title="More Information">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-                        </svg>
-                    </button>
-                </div>
-
-                <button class="text-gray-400 hover:text-gray-600 transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                        stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-end gap-3">
-                <div class="grid gap-1">
-                    <h2 class="text-2xl font-semibold text-gray-900">
-                        92.7
-                    </h2>
-
-                    <div class="flex items-center gap-2">
-                        <div
-                            class="flex items-center gap-1 bg-red-50 text-red-700 px-1.5 py-0.5 rounded text-[10px] font-semibold">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-3 h-3">
-                                <path fill-rule="evenodd"
-                                    d="M10 3a.75.75 0 0 1 .75.75v10.638l3.96-4.158a.75.75 0 1 1 1.08 1.04l-5.25 5.5a.75.75 0 0 1-1.08 0l-5.25-5.5a.75.75 0 1 1 1.08-1.04l3.96 4.158V3.75A.75.75 0 0 1 10 3Z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span>1.2</span>
-                        </div>
-                        <span class="text-[10px] text-gray-500 font-medium">from last month</span>
-                    </div>
-
-                    <!-- Legend -->
-                    <div class="grid grid-cols-2 gap-x-3 gap-y-0.5 text-[10px] font-medium text-gray-500">
-                        <div class="flex items-center gap-1.5">
-                            <div class="w-2 h-2 rounded-sm bg-blue-500"></div>
-                            <span>LCP <span class="text-gray-900 font-semibold">30%</span></span>
-                        </div>
-                        <div class="flex items-center gap-1.5">
-                            <div class="w-2 h-2 rounded-sm bg-violet-500"></div>
-                            <span>INP <span class="text-gray-900 font-semibold">46%</span></span>
-                        </div>
-                        <div class="flex items-center gap-1.5">
-                            <div class="w-2 h-2 rounded-sm bg-cyan-400"></div>
-                            <span>CLS <span class="text-gray-900 font-semibold">24%</span></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Graph Blocks -->
-                <div class="grid grid-cols-3 items-end gap-1.5">
-                    <div class="grid content-end gap-1">
-                        <div class="h-3.5 w-7 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-8 w-8 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-blue-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                    </div>
-                    <div class="grid content-end gap-1">
-                        <div class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-violet-500 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                    </div>
-                    <div class="grid content-end gap-1">
-                        <div class="h-3.5 w-7 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                        <div class="h-3.5 w-7 rounded-md bg-cyan-400 shadow-sm hover:scale-105 transition-transform">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
         <!-- Chartes -->
-        <div class="grid grid-cols-1 lg:grid-cols-4">
-            <div
-                class="p-3  dashboard-card-dots bg-white border border-gray-100 shadow-sm rounded-xl overflow-hidden sm:h-[8.5rem] lg:h-[22rem] lg:col-span-4">
+        <div class="col-span-3 ">
+            <!--card 1-->
+            <div class="p-4 bg-white border border-gray-100  shadow-md  rounded-2xl dashboard-card-dots ">
                 <div class="flex justify-between">
                     <div class="flex items-center">
                         <h3 class="text-gray-500 font-bold text-xl">
@@ -252,9 +272,9 @@
                             <button
                                 class="text-gray-600 transition-colors text-sm font-semibold px-6 py-2 rounded-2xl cursor-pointer">1D</button>
                             <button
-                                class="bg-white text-gray-600 transition-colors text-sm font-semibold px-6 py-2 shadow-lg rounded-2xl  cursor-pointer">1W</button>
+                                class="text-gray-600 transition-colors text-sm font-semibold px-6 py-2 rounded-2xl cursor-pointer">1W</button>
                             <button
-                                class="text-gray-600 transition-colors text-sm font-semibold px-6 py-2 rounded-2xl cursor-pointer">1M</button>
+                                class="bg-white text-gray-600 transition-colors text-sm font-semibold px-6 py-2 shadow-lg rounded-2xl  cursor-pointer">1M</button>
                             <button
                                 class="text-gray-600 transition-colors text-sm font-semibold px-6 py-2 rounded-2xl cursor-pointer">1Y</button>
                             <button
@@ -269,82 +289,201 @@
                         </button>
                     </div>
                 </div>
-                <div class="flex items-center">
-                    <div class="flex items-center flex-col gap-2 relative mt-30">
-                        <div class="flex justify-between items-center gap-30">
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
+                <div class="flex  justify-between  items-center gap-5">
+                    <div class=" mt-5 ml-20">
+                        <div class="" >
+                            <div class="grid  p-2 grid-cols-12 items-end gap-5">
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-13 h-9 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-10 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-10 h-11 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-8 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-13 h-10 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-11 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-10 h-10 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-10 h-12 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-7 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-17 h-8 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-12 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-5 h-14 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-8 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-13 h-10 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-20 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-7 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-16 h-8 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-12 h-10 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-10 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-11 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-10 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-4 h-9 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-8 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-14 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-4 h-11 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-11 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-12 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-12 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-14 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-8 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-5 h-9 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-7 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-4 h-12 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-10 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-11 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-4 h-9 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-8 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-12 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-10 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-4 h-10 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-12 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-8 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-4 h-10 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-11 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-11 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-12 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-14 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-9 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-5 h-9 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-10 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-4 h-11 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-12 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-14 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-11 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-16 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-12 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-2 h-16 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-12 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-14 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-3 items-end gap-2">
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-14 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-2 h-16 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-16 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-12 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                    <div class="relative h-32 w-3 rounded-full bg-gray-100"><span
+                                            class="absolute bottom-0 left-0 h-14 w-3 rounded-full bg-cyan-300"></span><span
+                                            class="absolute left-0 top-3 h-16 w-3 rounded-full bg-purple-500"></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
+                            <div class="mt-3 flex justify-between text-sm font-bold text-gray-500 w-full px-2">
+                                <span>JAN</span>
+                                <span>FEB</span>
+                                <span>MAR</span>
+                                <span>APR</span>
+                                <span>MAY</span>
+                                <span>JUN</span>
+                                <span>JUL</span>
+                                <span>AUG</span>
+                                <span>SEP</span>
+                                <span>OCT</span>
+                                <span>NOV</span>
+                                <span>DEC</span>
                             </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                             <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                            <div class="  relative w-3 h-30 rounded-md bg-gray-300 flex flex-col items-end  ">
-                                <span class="w-3 h-12 bg-blue-500 rounded-md absolute bottom-0"></span>
-                                <span class="w-3 h-15 bg-purple-500 rounded-md absolute top-[9%]"></span>
-                            </div>
-                          
-                        </div>
-
-
-                        <div class=" flex gap-4 justify-between w-full items-end ">
-                            <span class="text-sm font-semibold text-gray-500">JAN</span>
-                            <span class="text-sm font-semibold text-gray-500">FEB</span>
-                            <span class="text-sm font-semibold text-gray-500">MAR</span>
-                            <span class="text-sm font-semibold text-gray-500">APR</span>
-                            <span class="text-sm font-semibold text-gray-500">MAY</span>
-                            <span class="text-sm font-semibold text-gray-500">JUN</span>
-                            <span class="text-sm font-semibold text-gray-500">JUL</span>
-                            <span class="text-sm font-semibold text-gray-500">AUG</span>
-                            <span class="text-sm font-semibold text-gray-500">SEP</span>
-                            <span class="text-sm font-semibold text-gray-500">OCT</span>
-                            <span class="text-sm font-semibold text-gray-500">NOV</span>
-                            <span class="text-sm font-semibold text-gray-500">DEC</span>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-full items-end">
-                        <span class="text-md">8ms</span>
-                        <span class="text-md">6ms</span>
-                        <span class="text-md">4ms</span>
-                        <span class="text-md">2ms</span>
-                        <span class="text-md">0ms</span>
+                    <div class="flex flex-col justify-between  gap-2 text-sm text-gray-500 ">
+                        <span>8ms</span>
+                        <span>6ms</span>
+                        <span>4ms</span>
+                        <span>2ms</span>
+                        <span>0ms</span>
                     </div>
                 </div>
             </div>
