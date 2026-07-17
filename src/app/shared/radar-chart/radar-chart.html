@@ -1,0 +1,37 @@
+<div class="flex flex-col h-full w-full">
+    <!-- Chart -->
+    <div class="relative h-64 w-full">
+        <canvas baseChart 
+            [data]="radarChartData" 
+            [options]="radarChartOptions" 
+            [type]="radarChartType">
+        </canvas>
+    </div>
+
+    <!-- Progress Bar Section -->
+   <div class="mt-6 px-2">
+        <div class="relative flex items-center h-8">
+            <!-- Background ticks (simulated with repeating linear gradient) -->
+            <div class="absolute inset-y-1 w-full h-5 rounded-md flex overflow-hidden">
+                <div class="w-full h-full" style="background: repeating-linear-gradient(to right, #e5e7eb, #e5e7eb 3px, transparent 3px, transparent 7px);"></div>
+            </div>
+            
+            <!-- Foreground solid blue bar -->
+            <div class="absolute left-0 h-7 bg-blue-500/90 rounded-lg flex items-center justify-center shadow-sm z-10" style="width: 70%;">
+                <span class="text-white text-xs font-medium">70%</span>
+            </div>
+            
+            <!-- Slider Thumb (Thumb at 70%) -->
+            <div class="absolute h-9 w-1 bg-blue-500 rounded-full z-20 shadow-sm" style="left: 70%; transform: translateX(-50%);">
+                <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-500 rounded-full border-2 border-white box-content"></div>
+            </div>
+            
+            <!-- End tick marker -->
+            <div class="absolute right-0 h-7 w-1 bg-gray-300 rounded-full z-10"></div>
+        </div>
+        <div class="flex justify-between items-center mt-3 text-xs font-semibold">
+            <span class="text-gray-800">Progress this period</span>
+            <span class="text-gray-800">100%</span>
+        </div>
+    </div>
+</div>
